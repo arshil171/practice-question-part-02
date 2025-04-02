@@ -1,3 +1,15 @@
+//   Q - 1 
+
+let Even = document.querySelector("#Even")
+
+for(let i=1;i<=50;i++){
+    
+    if(i%2 == 0){
+       Even.innerText += i
+       Even.innerText += "," 
+    }
+}
+
 
 // Q - 2
 
@@ -119,6 +131,43 @@ for(let i=1;i<=100;i++){
 }
 Q_8.innerHTML += " = "
 Q_8.innerHTML += sumOfDivisible
+
+
+// Q -10 
+
+let Q_10 = document.querySelector("#Q_10")
+
+let number  = 10
+
+
+while(number >= 1){
+    Q_10.innerHTML += number
+    Q_10.innerHTML +=","
+    number--
+}
+
+
+// Q - 11 
+
+let Q_11 = document.querySelector("Q_11")
+
+let number2 = 1
+let sumOfAll = 1
+
+while(number2 <= 1000){
+    // Q_11.innerHTML += sumOfAll*number2
+    double =  sumOfAll += number2
+    Q_11.innerHTML += double
+    number2++
+    if(number2 == 1000){
+        break;
+    }
+   
+
+}
+
+
+
 
 
 
