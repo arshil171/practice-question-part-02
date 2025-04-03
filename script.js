@@ -132,6 +132,22 @@ for(let i=1;i<=100;i++){
 Q_8.innerHTML += " = "
 Q_8.innerHTML += sumOfDivisible
 
+// Q - 9
+
+let Q_9 = document.querySelector("#Q_9")
+
+let sumOfSquares = 1
+
+for(let i=1;i<=10;i++){
+    sumOfSquares *= i
+    Q_9.innerHTML += i
+    Q_9.innerHTML += "*"
+   
+}
+
+Q_9.innerHTML += " = "
+Q_9.innerHTML += sumOfSquares
+
 
 // Q -10 
 
@@ -149,27 +165,59 @@ while(number >= 1){
 
 // Q - 11 
 
-let Q_11 = document.querySelector("Q_11")
+let Q_11 = document.querySelector("#Q_11")
 
-let number2 = 1
-let sumOfAll = 1
+let number2 = 1;
+// console.log(number)
+Q_11.innerHTML += number2
+Q_11.innerHTML += ","
 
-while(number2 <= 1000){
-    // Q_11.innerHTML += sumOfAll*number2
-    double =  sumOfAll += number2
-    Q_11.innerHTML += double
-    number2++
-    if(number2 == 1000){
-        break;
+while (number2 <= 1000) {
+    number2 *= 2;
+    Q_11.innerHTML += number2
+    Q_11.innerHTML += ","
+    // console.log(number)
+}
+Q_11.innerHTML += "          <span>The final value :-</span> "
+Q_11.innerHTML += number2
+
+
+// Q -12 
+
+let Q_12 = document.querySelector("#Q_12")
+
+let number3 = 1;
+
+while (number3 <= 100) {
+    if(number3 % 2 == 0){
+        Q_12.innerHTML += number3
+        Q_12.innerHTML += ","
     }
-   
-
+    number3++
 }
 
+// Q - 13
 
+let Q_13 = document.querySelector("#Q_13")
 
+let numberForDivisible = 1
 
+while (numberForDivisible <= 90) {
+    if(numberForDivisible % 3 == 0 && numberForDivisible % 5 == 0){
+        Q_13.innerHTML += numberForDivisible
+        Q_13.innerHTML += ","
+    }
+    numberForDivisible++
+}
 
+// Q -14 
 
+let Q_14 = document.querySelector("#Q_14")
 
+let numDoWhile = 1
 
+do{
+    Q_14.innerHTML += numDoWhile
+    Q_14.innerHTML += ","
+    numDoWhile++
+}while(numDoWhile <= 10)
